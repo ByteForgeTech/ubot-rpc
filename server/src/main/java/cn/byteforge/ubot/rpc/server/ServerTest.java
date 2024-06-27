@@ -1,4 +1,4 @@
-package cn.byteforge.ubot.rpc.inter;
+package cn.byteforge.ubot.rpc.server;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;

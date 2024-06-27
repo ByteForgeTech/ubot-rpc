@@ -25,6 +25,7 @@ public class ClientTest {
 
         asyncAuth(channel);
 //        register(channel);
+        System.in.read();
     }
 
     /**

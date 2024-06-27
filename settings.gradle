@@ -1,3 +1,4 @@
 rootProject.name = 'ubot-rpc'
 include 'interface'
+include 'server'
 

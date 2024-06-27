@@ -1,7 +1,5 @@
-package cn.byteforge.ubot.rpc.inter;
+package cn.byteforge.ubot.rpc.server;
 
-import io.grpc.Status;
-import io.grpc.StatusException;
 import io.grpc.stub.StreamObserver;
 import io.kritor.authentication.AuthenticateRequest;
 import io.kritor.authentication.AuthenticateResponse;
