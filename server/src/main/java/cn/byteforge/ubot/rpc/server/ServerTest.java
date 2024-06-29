@@ -1,5 +1,7 @@
 package cn.byteforge.ubot.rpc.server;
 
+import cn.byteforge.ubot.rpc.server.service.AuthenticationServiceImpl;
+import cn.byteforge.ubot.rpc.server.service.EventServiceImpl;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 
@@ -13,7 +15,8 @@ public class ServerTest {
     public void start() throws IOException, InterruptedException {
         server = ServerBuilder
                 .forPort(12345)
-                .addService(new Authentication())
+                .addService(new AuthenticationServiceImpl())
+                .addService(new EventServiceImpl())
                 .build().start();
 
         Runtime.getRuntime()
