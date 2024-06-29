@@ -7,6 +7,7 @@ UBot 机器人的 rpc-interface 与 rpc-client 模块实现，并提供简单的
 ## Features
 
 - [x] ubot 账户鉴权
-- [ ] client 与 server 自定义通信
-  - [ ] server 事件下发
-  - [ ] client 数据回传
+- [ ] client 与 server 通信
+  - [x] 事件系统
+  - [ ] QQ 基本功能实现
+  - [ ] 自定义拓展功能实现
