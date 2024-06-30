@@ -1,13 +1,21 @@
-package cn.byteforge.ubot.rpc.client.invoker;
+package cn.byteforge.ubot.rpc.client.mc.invoker;
 
 import io.grpc.Channel;
 import io.grpc.stub.StreamObserver;
 
 import java.util.function.Consumer;
 
-public abstract class AsyncBaseInvoker<Response> {
+public abstract class AsyncBaseInvoker<ServiceStub, Response> {
 
-    public abstract void invoke(Channel channel);
+    protected final Channel channel;
+
+    public AsyncBaseInvoker(Channel channel) {
+        this.channel = channel;
+    }
+
+    public abstract void invoke(
+            BConsumer<ServiceStub, StreamObserver<Response>> stubConsumer
+    );
 
     protected StreamObserver<Response> createStreamObserver(
             Consumer<Response> onNext,

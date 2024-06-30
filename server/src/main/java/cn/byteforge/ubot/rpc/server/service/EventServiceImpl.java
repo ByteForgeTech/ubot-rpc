@@ -17,6 +17,7 @@ public class EventServiceImpl extends EventServiceGrpc.EventServiceImplBase {
         System.out.println("EventServiceImpl registerActiveListener: RequestPushEvent#type " + request.getType());
         int messageId = 0;
         while (true) {
+            System.out.println("服务端下发事件");
             observer.onNext(EventStructure.newBuilder()
                     .setType(EventType.EVENT_TYPE_MESSAGE)
                     .setMessage(PushMessageBody.newBuilder()

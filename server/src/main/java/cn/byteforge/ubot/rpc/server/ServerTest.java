@@ -2,6 +2,7 @@ package cn.byteforge.ubot.rpc.server;
 
 import cn.byteforge.ubot.rpc.server.service.AuthenticationServiceImpl;
 import cn.byteforge.ubot.rpc.server.service.EventServiceImpl;
+import cn.byteforge.ubot.rpc.server.service.MessageServiceImpl;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 
@@ -17,6 +18,7 @@ public class ServerTest {
                 .forPort(12345)
                 .addService(new AuthenticationServiceImpl())
                 .addService(new EventServiceImpl())
+                .addService(new MessageServiceImpl())
                 .build().start();
 
         Runtime.getRuntime()
