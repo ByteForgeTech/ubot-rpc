@@ -1,0 +1,14 @@
+name: UBotMC
+main: cn.byteforge.ubot.rpc.client.mc.UBotMCClient
+version: 1.0.0
+
+author: IllTamer
+
+load: POSTWORLD
+
+softdepend: []
+
+commands:
+  UBotMC:
+    aliases:
+      - umc
