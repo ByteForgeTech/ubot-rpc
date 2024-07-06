@@ -1,4 +1,4 @@
-package cn.byteforge.ubot.rpc.client.mc.invoker;
+package cn.byteforge.ubot.rpc.client.mc.rpc.invoker;
 
 public interface BConsumer<T1, T2> {
 

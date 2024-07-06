@@ -1,8 +1,8 @@
-package cn.byteforge.ubot.rpc.client.mc;
+package cn.byteforge.ubot.rpc.client.mc.rpc;
 
-import cn.byteforge.ubot.rpc.client.mc.invoker.ActiveEventAsyncInvoker;
-import cn.byteforge.ubot.rpc.client.mc.invoker.AuthenticationAsyncInvoker;
-import cn.byteforge.ubot.rpc.client.mc.invoker.MessageAsyncInvoker;
+import cn.byteforge.ubot.rpc.client.mc.rpc.invoker.ActiveEventAsyncInvoker;
+import cn.byteforge.ubot.rpc.client.mc.rpc.invoker.AuthenticationAsyncInvoker;
+import cn.byteforge.ubot.rpc.client.mc.rpc.invoker.MessageAsyncInvoker;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.kritor.authentication.AuthenticateRequest;
