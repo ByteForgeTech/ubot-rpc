@@ -1,5 +1,5 @@
 name: UBotMC
-main: cn.byteforge.ubot.rpc.client.mc.UBotMCClient
+main: cn.byteforge.ubot.rpc.client.mc.start.bukkit.UBotMCClient
 version: 1.0.0
 
 author: IllTamer
