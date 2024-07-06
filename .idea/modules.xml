@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ubot-rpc.iml" filepath="$PROJECT_DIR$/.idea/modules/ubot-rpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/ubot-rpc.client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/client/ubot-rpc.client.main.iml" />
     </modules>
   </component>
 </project>

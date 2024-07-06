@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'java-library'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
 }
 
 group = 'cn.byteforge.ubot.rpc.client'
@@ -17,11 +18,13 @@ repositories {
 dependencies {
     implementation project(":interface")
     implementation 'org.slf4j:slf4j-api:1.7.32'
+    implementation 'org.slf4j:slf4j-simple:1.7.32'
 
     implementation("io.grpc:grpc-stub:1.62.2")
     implementation("io.grpc:grpc-protobuf:1.62.2")
     implementation("io.grpc:grpc-netty:1.62.2")
     implementation("com.google.protobuf:protobuf-java-util:3.25.1")
+    implementation 'com.google.code.gson:gson:2.10.1'
 
     compileOnly 'org.spigotmc:spigot-api:1.16.4-R0.1-SNAPSHOT'
     compileOnly 'net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT'
@@ -34,4 +37,13 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+shadowJar {
+    archiveBaseName = parent.name + '-' + project.name
+    version = project.version
+    archiveClassifier = 'all'
+    manifest {
+        attributes('Automatic-Module-Name': 'cn.byteforge.ubot.rpc.client.mc')
+    }
 }
