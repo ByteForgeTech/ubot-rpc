@@ -14,3 +14,11 @@ UBot 机器人的 rpc-interface 与 rpc-client 模块实现，并提供简单的
   - [ ] 自定义拓展功能实现
 - [ ] 支持
 - [ ] 依赖解耦合，支持热更新
+
+### MC Client
+
+#### JS Plugin Format
+
+```javascript
+
+```
