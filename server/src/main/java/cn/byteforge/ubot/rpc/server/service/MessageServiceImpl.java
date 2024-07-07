@@ -9,7 +9,7 @@ public class MessageServiceImpl extends MessageServiceGrpc.MessageServiceImplBas
 
     @Override
     public void sendMessage(SendMessageRequest request, StreamObserver<SendMessageResponse> observer) {
-        System.out.println("收到发送信息请求: " + request.getElementsList());;
+        System.out.println("收到发送信息请求: " + request);;
         observer.onNext(SendMessageResponse.newBuilder()
                 .setMessageId("666")
                 .setMessageTime(System.currentTimeMillis())

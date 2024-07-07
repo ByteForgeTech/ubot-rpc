@@ -14,7 +14,7 @@ public class AuthenticationServiceImpl extends AuthenticationServiceGrpc.Authent
         String account = request.getAccount();
         String ticket = request.getTicket();
         System.out.println("接收到 account=" + account + " ticket=" + ticket);
-        if ("ubot-account".equals(account) && "123456".equals(ticket)) {
+        if ("admin".equals(account) && "admin".equals(ticket)) {
             observer.onNext(AuthenticateResponse.newBuilder()
                     .setCode(AuthenticateResponse.AuthenticateResponseCode.OK)
                     .setMsg("验证通过")
