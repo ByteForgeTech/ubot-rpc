@@ -1,0 +1,3 @@
+./gradlew publish \
+  -PiunlimitReleasesUsername={} \
+  -PiunlimitReleasesPassword={}
