@@ -7,8 +7,13 @@ function onGameEvent(event, type) {
         return;
     }
     var message = event.getMessage();
-    ScriptHelper.sendRPCMessage("JS接收到: " + message);
+    ScriptHelper.sendGroupRpcMessage("[" + event.getPlayer().getDisplayName() + "] " + message);
 }
+
+// 监听 RPC 事件
+// function onRpcEvent(event, type) {
+//
+// }
 
 // 获取脚本版本
 function getVersion() {

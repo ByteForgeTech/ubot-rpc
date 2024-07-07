@@ -3,8 +3,6 @@ package cn.byteforge.ubot.rpc.client.mc.script;
 import lombok.Builder;
 import lombok.Data;
 
-import java.io.Reader;
-
 /**
  * 附属脚本描述类
  * */

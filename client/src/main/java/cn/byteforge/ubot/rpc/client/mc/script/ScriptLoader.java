@@ -1,8 +1,8 @@
 package cn.byteforge.ubot.rpc.client.mc.script;
 
+import cn.byteforge.ubot.rpc.client.mc.api.BConsumer;
 import cn.byteforge.ubot.rpc.client.mc.api.ClientAPI;
 import cn.byteforge.ubot.rpc.client.mc.api.adapter.Bootstrap;
-import cn.byteforge.ubot.rpc.client.mc.rpc.invoker.BConsumer;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 

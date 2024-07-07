@@ -1,0 +1,14 @@
+# UBot 链接配置
+ubot:
+  # rpc host
+  host: "localhost"
+  # rpc port
+  port: 12345
+  # 用户账户
+  account: "admin"
+  # 用户密匙
+  ticket: "admin"
+
+settings:
+  # 启用的群组
+  group: 849626891

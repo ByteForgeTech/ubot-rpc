@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'cn.byteforge.ubot.rpc.client'
-version = '1.0.0'
+version = '0.0.1-SNAPSHOT'
 
 repositories {
     mavenLocal()
@@ -46,4 +46,13 @@ shadowJar {
     manifest {
         attributes('Automatic-Module-Name': 'cn.byteforge.ubot.rpc.client.mc')
     }
+    mergeServiceFiles()
+}
+
+[
+        'io.netty',
+].each {
+    var relocated = 'cn.byteforge.ubot.rpc.client.mc.libs.' + it
+    tasks.shadowJar.relocate it, relocated
+//    tasks.generateRuntimeDownloadResourceForRuntimeDownloadOnly.relocate it, relocated
 }

@@ -1,5 +1,7 @@
 package cn.byteforge.ubot.rpc.client.mc.script;
 
+import cn.byteforge.ubot.rpc.client.mc.api.ClientAPI;
+import cn.byteforge.ubot.rpc.client.mc.config.UBotConfiguration;
 import lombok.extern.slf4j.Slf4j;
 import org.bukkit.event.Event;
 
@@ -24,10 +26,12 @@ public class ScriptHelper {
     }
 
     /**
-     * 发生 RPC 消息
+     * 向指定群组发送 RPC 消息
+     * @param message 消息内容
      * */
-    public void sendRPCMessage(String message) {
-        log.info("Java收到: " + message);
+    public void sendGroupRpcMessage(String message) {
+        UBotConfiguration.SettingsConfig config = UBotConfiguration.getInstance().getSettings();
+        ClientAPI.getInstance().getRpcManager().sendGroupMessage(Long.toString(config.group), message);
     }
 
     private static final class InstanceHolder {

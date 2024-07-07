@@ -1,5 +1,7 @@
 package cn.byteforge.ubot.rpc.client.mc.api.adapter;
 
+import cn.byteforge.ubot.rpc.client.mc.rpc.RpcManager;
+
 import java.io.File;
 import java.io.InputStream;
 import java.util.logging.Logger;
@@ -37,6 +39,8 @@ public interface Bootstrap {
      * 获取当前启动器类加载器
      * */
     ClassLoader getInstClassLoader();
+
+    RpcManager getRpcManager();
 
     Type getType();
 
