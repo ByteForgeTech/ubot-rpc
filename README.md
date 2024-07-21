@@ -6,6 +6,25 @@ UBot 机器人的 rpc-interface 与 rpc-client 模块实现，并提供简单的
 
 ## Import
 
+### inter
+
+```xml
+<dependency>
+  <groupId>cn.byteforge.ubot.rpc.inter</groupId>
+  <artifactId>interface</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+### client
+
+```xml
+<dependency>
+  <groupId>cn.byteforge.ubot.rpc.client</groupId>
+  <artifactId>UBotMC</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
 
 ## Features
 
